@@ -113,37 +113,47 @@ Los administradores tienen acceso completo a todas las tareas y usuarios del sis
 ### Registrar un usuario
 POST /api/auth/register
 Content-Type: application/json
+
+```json
 {
-"name": "Usuario Normal",
-"email": "usuario@test.com",
-"password": "123456"
+    "name": "Usuario Normal",
+    "email": "usuario@test.com",
+    "password": "123456"
 }
+```
 
 ### Iniciar sesión
 POST /api/auth/login
 Content-Type: application/json
-{
-"email": "usuario@test.com",
-"password": "123456"
-}
 
+```json
+{
+    "email": "usuario@test.com",
+    "password": "123456"
+}
+```
 
 Respuesta:
+```json
 {
-"success": true,
-"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
+    "success": true,
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
 }
+```
 
 ### Crear una tarea
 POST /api/tasks
 Authorization: Bearer TU_TOKEN
 ![Ejemplo en postman de como queda el Bearer](image.png)
 Content-Type: application/json
+
+```json
 {
-"title": "Mi tarea",
-"description": "Descripción de la tarea",
-"dueDate": "2023-12-31"
+    "title": "Mi tarea",
+    "description": "Descripción de la tarea",
+    "dueDate": "2023-12-31"
 }
+```
 
 ### Obtener todas las tareas
 GET /api/tasks
@@ -153,9 +163,12 @@ Authorization: Bearer TU_TOKEN
 PUT /api/tasks/:id
 Authorization: Bearer TU_TOKEN
 Content-Type: application/json
+
+```json
 {
-"status": "en progreso"
+    "status": "en progreso"
 }
+```
 
 ### Eliminar una tarea
 DELETE /api/tasks/:id
