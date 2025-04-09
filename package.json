@@ -5,8 +5,24 @@
   "main": "src/app.js",
   "scripts": {
     "start": "node src/app.js",
+    "test": "jest",
     "dev": "nodemon src/app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "clean": "node scripts/cleanUp.js",
+    "user:create": "node scripts/user/createUser.js",
+    "user:login": "node scripts/user/login.js",
+    "user:create-task": "node scripts/user/createTask.js",
+    "user:get-tasks": "node scripts/user/getTasks.js",
+    "user:delete-task": "node scripts/user/deleteTask.js",
+    "user:update-task": "node scripts/user/updateTask.js",
+    
+    "admin:create": "node scripts/admin/createAdmin.js",
+    "admin:login": "node scripts/admin/login.js",
+    "admin:get-users": "node scripts/admin/getAllUsers.js",
+    "admin:get-tasks": "node scripts/admin/getAllTasks.js", 
+    "admin:update-user": "node scripts/admin/updateUser.js",
+    "admin:delete-user": "node scripts/admin/deleteUser.js",
+    "admin:manage-tasks": "node scripts/admin/manageTasks.js",
+    "admin:run-all": "node scripts/admin/runAll.js"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
@@ -17,6 +33,7 @@
     "mongoose": "^7.0.3"
   },
   "devDependencies": {
+    "axios": "^1.4.0",
     "nodemon": "^2.0.22"
   }
 }

@@ -122,6 +122,19 @@ Content-Type: application/json
 }
 ```
 
+### Registrar un usuario administrador
+POST /api/auth/register
+Content-Type: application/json
+
+```json
+{
+    "name": "Administrador",
+    "email": "admin@test.com",
+    "password": "123456",
+    "role": "admin"
+}
+```
+
 ### Iniciar sesión
 POST /api/auth/login
 Content-Type: application/json

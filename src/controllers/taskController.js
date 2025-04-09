@@ -145,7 +145,7 @@ exports.deleteTask = async (req, res) => {
             });
         }
 
-        await task.remove();
+        await Task.findByIdAndDelete(req.params.id);
 
         res.status(200).json({
             success: true,

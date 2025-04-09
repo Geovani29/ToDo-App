@@ -5,7 +5,7 @@ const dotenv = require("dotenv");
 // Cargar variables de entorno
 dotenv.config();
 
-// Conexión a la base de datos
+// Conexiï¿½n a la base de datos
 require("./config/database");
 
 // Inicializar Express
@@ -30,3 +30,5 @@ const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
   console.log(`Servidor corriendo en puerto ${PORT}`);
 });
+
+module.exports = app;
