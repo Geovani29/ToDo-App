@@ -55,7 +55,7 @@ Una API RESTful robusta para gestión de tareas personales con sistema de autent
 
    El servidor estará disponible en `http://localhost:5000`
 
-## 🏗️ Arquitectura
+## Arquitectura
 
 ### Roles del Sistema
 
