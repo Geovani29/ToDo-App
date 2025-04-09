@@ -201,14 +201,6 @@ Authorization: Bearer TU_TOKEN
 - **Headers**: Implementación de headers de seguridad
 - **Rate Limiting**: Protección contra ataques de fuerza bruta
 
-## 📝 Licencia
-
-Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) para más detalles.
-
-## 🤝 Contribuir
-
-Las contribuciones son bienvenidas. Por favor, abre un issue primero para discutir los cambios que te gustaría hacer.
-
 ---
 
-Desarrollado con ❤️ por [Tu Nombre](https://github.com/tuusuario)
+Desarrollado con ❤️ por [Tu Nombre](https://github.com/Geovani29)
