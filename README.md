@@ -203,4 +203,4 @@ Authorization: Bearer TU_TOKEN
 
 ---
 
-Desarrollado con ❤️ por [Tu Nombre](https://github.com/Geovani29)
+Desarrollado con ❤️ por [Geovani](https://github.com/Geovani29)
