@@ -14,12 +14,12 @@ const UserSchema = new mongoose.Schema({
     unique: true,
     match: [
       /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/,
-      "Por favor ingrese un email válido"
+      "Por favor ingrese un email vï¿½lido"
     ]
   },
   password: {
     type: String,
-    required: [true, "Por favor ingrese una contraseña"],
+    required: [true, "Por favor ingrese una contraseï¿½a"],
     minlength: 6,
     select: false
   },
@@ -34,7 +34,7 @@ const UserSchema = new mongoose.Schema({
   }
 });
 
-// Encriptar contraseña antes de guardar
+// Encriptar contraseï¿½a antes de guardar
 UserSchema.pre("save", async function(next) {
   if (!this.isModified("password")) {
     next();
@@ -43,14 +43,14 @@ UserSchema.pre("save", async function(next) {
   this.password = await bcrypt.hash(this.password, salt);
 });
 
-// Método para generar token JWT
+// Mï¿½todo para generar token JWT
 UserSchema.methods.getSignedJwtToken = function() {
   return jwt.sign({ id: this._id }, process.env.JWT_SECRET, {
     expiresIn: process.env.JWT_EXPIRE
   });
 };
 
-// Método para verificar contraseña
+// Mï¿½todo para verificar contraseï¿½a
 UserSchema.methods.matchPassword = async function(enteredPassword) {
   return await bcrypt.compare(enteredPassword, this.password);
 };

@@ -3,13 +3,13 @@ const mongoose = require("mongoose");
 const TaskSchema = new mongoose.Schema({
   title: {
     type: String,
-    required: [true, "Por favor ingrese un título"],
+    required: [true, "Por favor ingrese un tï¿½tulo"],
     trim: true,
-    maxlength: [100, "El título no puede tener más de 100 caracteres"]
+    maxlength: [100, "El tï¿½tulo no puede tener mï¿½s de 100 caracteres"]
   },
   description: {
     type: String,
-    required: [true, "Por favor ingrese una descripción"],
+    required: [true, "Por favor ingrese una descripciï¿½n"],
     trim: true
   },
   status: {
@@ -19,7 +19,7 @@ const TaskSchema = new mongoose.Schema({
   },
   dueDate: {
     type: Date,
-    required: [true, "Por favor ingrese una fecha límite"]
+    required: [true, "Por favor ingrese una fecha lï¿½mite"]
   },
   owner: {
     type: mongoose.Schema.Types.ObjectId,
