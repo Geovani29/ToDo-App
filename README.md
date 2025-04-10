@@ -164,7 +164,7 @@ PUT /api/users/:id
 
 ```
 
-### Eliminar una tarea
+### Eliminar un usuario
 DELETE /api/users/:id
 Authorization: Bearer TU_TOKEN
 
