@@ -124,7 +124,6 @@ Content-Type: application/json
 
 ### Registrar un usuario administrador
 POST /api/auth/register
-Content-Type: application/json
 
 ```json
 {
@@ -137,7 +136,6 @@ Content-Type: application/json
 
 ### Iniciar sesión
 POST /api/auth/login
-Content-Type: application/json
 
 ```json
 {
@@ -153,6 +151,22 @@ Respuesta:
     "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
 }
 ```
+
+### Actualizar usuario
+PUT /api/users/:id
+
+```json
+{
+  "name": "Nuevo Nombre",
+  "email": "nuevo@email.com",
+  "role": "admin"
+}
+
+```
+
+### Eliminar una tarea
+DELETE /api/users/:id
+Authorization: Bearer TU_TOKEN
 
 ### Crear una tarea
 POST /api/tasks
